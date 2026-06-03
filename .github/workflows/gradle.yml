@@ -92,4 +92,4 @@ jobs:
         env:
           GPR_USER: ${{ github.actor }}
           GPR_TOKEN: ${{ secrets.GH_PACKAGES_READ_TOKEN }}
-        run: ./gradlew clean test --tests "demoapi.*" --info -DrunWithMetatest=true
+        run: ./gradlew clean test --tests "*demoapi.*" -DrunWithAntigen=true
