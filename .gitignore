@@ -1,6 +1,5 @@
 # Ignore build output directories
 /build/
-/lib/build/
 /out/
 
 # Ignore IntelliJ IDEA project files
@@ -8,7 +7,6 @@
 /*.iml
 
 # Ignore Gradle caches and logs
-/.gradle/
 /.gradle/
 /logs/
 *.log
@@ -26,6 +24,6 @@ Thumbs.db
 
 .env
 gradle.properties
-*metatest.properties
+*antigen.properties
 schema_coverage.json
 fault_simulation_report.json
