@@ -11,7 +11,7 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured:5.5.6")
     testImplementation("io.rest-assured:json-path:5.3.0")
     testImplementation("org.assertj:assertj-core:3.24.2")
-    implementation("com.github.antigen-labs:antigen:0.1")
+    testImplementation("com.github.antigen-framework:antigen:v0.1")
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
 }
