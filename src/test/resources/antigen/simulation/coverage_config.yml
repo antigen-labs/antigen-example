@@ -34,7 +34,7 @@ coverage:
     enabled: true
 
     # Path to OpenAPI specification file (JSON or YAML)
-    openapi_spec_path: "api-specs.yaml"
+    openapi_spec_path: "antigen/generation/api-specs.yaml"
 
     # Output file for gap analysis report
     output_file: "gap_analysis.json"

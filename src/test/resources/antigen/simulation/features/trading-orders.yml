@@ -128,7 +128,7 @@ invariants:
             less_than_or_equal: $.filled_at
 
 tests:
-  - class: demoapi.OrdersApiTest
+  - class: generated.OrdersApiTest
     methods:
       - testCreateBuyOrder
       - testCreateSellOrder
