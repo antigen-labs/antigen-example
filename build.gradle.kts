@@ -22,7 +22,7 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured:5.5.6")
     testImplementation("io.rest-assured:json-path:5.3.0")
     testImplementation("org.assertj:assertj-core:3.24.2")
-    testImplementation("io.antigen:antigen:1.0.0-SNAPSHOT")
+    testImplementation("com.github.antigen-framework:antigen:v0.3")
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
 }
