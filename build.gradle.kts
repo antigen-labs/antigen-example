@@ -4,7 +4,7 @@ buildscript {
         maven { url = uri("https://jitpack.io") }
     }
     dependencies {
-        classpath("io.antigen:antigen:1.0.0-SNAPSHOT")
+        classpath("com.github.antigen-framework:antigen:v0.3")
     }
 }
 
