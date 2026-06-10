@@ -4,7 +4,7 @@ buildscript {
         maven { url = uri("https://jitpack.io") }
     }
     dependencies {
-        classpath("com.github.antigen-framework:antigen:v0.3")
+        classpath("com.github.antigen-framework:antigen:v0.4")
     }
 }
 
@@ -22,7 +22,7 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured:5.5.6")
     testImplementation("io.rest-assured:json-path:5.3.0")
     testImplementation("org.assertj:assertj-core:3.24.2")
-    testImplementation("com.github.antigen-framework:antigen:v0.3")
+    testImplementation("com.github.antigen-framework:antigen:v0.4")
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
 }

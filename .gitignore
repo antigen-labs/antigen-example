@@ -25,5 +25,3 @@ Thumbs.db
 .env
 gradle.properties
 *antigen.properties
-schema_coverage.json
-fault_simulation_report.json
