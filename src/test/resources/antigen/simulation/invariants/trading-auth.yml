@@ -1,4 +1,4 @@
-feature: Trading - Authentication
+name: Trading - Authentication
 description: >
   Business rules for authentication endpoints.
   Login must return a valid bearer token; /me must return an active user with consistent timestamps.
@@ -37,8 +37,3 @@ invariants:
           field: created_at
           less_than_or_equal: $.updated_at
 
-tests:
-  - class: demoapi.AuthApiTest
-    methods:
-      - testLogin
-      - testGetCurrentUser

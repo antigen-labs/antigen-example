@@ -83,7 +83,7 @@ Six test classes covering the full API surface:
 
 The tests deliberately vary in assertion depth — some validate every response field, others only check the status code and array size. This is intentional: it produces a realistic report where some faults are caught and others escape.
 
-### Feature files (`src/test/resources/antigen/features/`)
+### Invariant files (`src/test/resources/antigen/simulation/invariants/`)
 
 Four files defining business invariants grouped by domain:
 
@@ -98,10 +98,11 @@ Invariants marked `# DEMO: will not be caught` are valid business rules that the
 
 ```
 antigen/
-├── contract.yml         # null_field + missing_field faults enabled
-├── antigen.properties   # antigen.config.source=local
-├── coverage_config.yml  # endpoint coverage + gap analysis
-└── features/            # invariant files above
+├── antigen.properties      # antigen.config.source=local
+├── simulation/
+│   ├── coverage_config.yml # endpoint coverage + gap analysis
+│   └── invariants/         # invariant files above
+└── generation/             # AI test-generation config + OpenAPI spec
 ```
 
 ---
