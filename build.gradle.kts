@@ -4,7 +4,8 @@ buildscript {
         maven { url = uri("https://jitpack.io") }
     }
     dependencies {
-        classpath("com.github.antigen-labs:antigen:v0.6")
+        // The io.antigen Gradle plugin lives in the antigen-cli module (Phase 2b module split).
+        classpath("com.github.antigen-labs.antigen:antigen-cli:v0.7")
     }
 }
 
@@ -22,7 +23,8 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured:5.5.6")
     testImplementation("io.rest-assured:json-path:5.3.0")
     testImplementation("org.assertj:assertj-core:3.24.2")
-    testImplementation("com.github.antigen-labs:antigen:v0.6")
+    // The JVM adapter; exposes the pure engine transitively via `api`.
+    testImplementation("com.github.antigen-labs.antigen:antigen-test-runner:v0.7")
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
 }
